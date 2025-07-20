@@ -48,7 +48,7 @@
         "isActive": false
     },
     {
-        "logo": "/src/assets/logo-pallete-picker.svg",
+        "logo": "/src/assets/logo-palette-picker.svg",
         "name": "Palette Picker",
         "description": "Instantly extracts color palettes from any webpage.",
         "isActive": true

@@ -19,7 +19,7 @@ export default function MainContent() {
           </nav>
         </section>
         
-        <section>
+        <section className='extensions-container'>
           {extensionCard}
         </section>
       </main>
