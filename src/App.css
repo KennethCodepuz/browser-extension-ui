@@ -17,8 +17,8 @@
 
 :root {
   
-  --fourth-color: #c6C6C6;
-  --third-color: #D6E2F5;
+  --fourth-color: #D6E2F5;
+  --third-color: #c6C6C6;
   --secondary-color: #EEEEEE;
   --primary-color: #Fbfdfe;
   --color-red-400: #F25C54;
@@ -34,6 +34,7 @@
   --text-preset-2: 1.25rem;     /* 20px */ 
   --text-preset-3: 1rem;     /* 16px */ 
   
+  --shadow-color: #D9E5F4;
 
   --spacing-0: 0px;
   --spacing-025: 0.125rem;  /* 2px */
@@ -66,12 +67,14 @@
 
 [data-theme='dark'] {
   --fourth-color: #091540;
-  --third-color: #202535;
+  --third-color: #535868;
   --secondary-color: #2F364B;
-  --primary-color: #535868;
+  --primary-color: #202535;
 
   --primary-text-color: #Fbfdfe;
   --secondary-text-color: #c6C6C6;
+
+  --shadow-color: #d9e5f400;
 
   --gradient: linear-gradient(180deg, #04091B 0%, #091540 100%);
 }
@@ -106,6 +109,7 @@ button:focus, button:active {
   padding-block-start: var(--spacing-250);
   padding-block-end: var(--spacing-800);
   padding-inline: var(--spacing-200);
+  
 }
 
 .header-container {
@@ -120,7 +124,7 @@ button:focus, button:active {
   background-color: var(--primary-color);
   margin-block-end: var(--spacing-500);
   border: 1px solid var(--third-color);
-  box-shadow: 2px 0px 3px 0px #D9E5F4;
+  box-shadow: 2px 0px 3px 0px var(--shadow-color);
 }
 
 .header-container > img {
@@ -179,7 +183,7 @@ button:focus, button:active {
   padding-block-end: var(--spacing-125);
   border-radius: var(--radius-full);
   border: 1px solid var(--third-color);
-  box-shadow: 2px 0px 3px 0px #D9E5F4;
+  box-shadow: 2px 0px 3px 0px var(--shadow-color);
 }
 
 .main-content-navbar > button:hover {
@@ -207,7 +211,7 @@ button:focus, button:active {
   background-color: var(--primary-color);
   border: 1px solid var(--third-color);
   border-radius: var(--radius-20);
-  box-shadow: 0px 2px 2px 0px #c2cee1;
+  box-shadow: 0px 2px 2px 0px var(--shadow-color);
 }
 
 .icon-and-description {
@@ -232,7 +236,7 @@ button:focus, button:active {
 .extension-description {
   font-size: var(--text-preset-3);
   line-height: 1.4;
-  color-interpolation-filters: var(--secondary-text-color);
+  color: var(--secondary-text-color);
   font-weight: 400;
 }
 
@@ -250,7 +254,7 @@ button:focus, button:active {
   padding-inline: var(--spacing-200);
   padding-block: var(--spacing-100);
   border-radius: var(--radius-full);
-  border: 1px solid var(--fourth-color);
+  border: 1px solid var(--third-color);
   background-color: var(--primary-color);
 }
 
@@ -284,7 +288,7 @@ button:focus, button:active {
   transform: translateY(-50%) translateX(-50%);
   /* right: 0; */
   /* bottom: 7px; */
-  background-color: #ccc;
+  background-color: var(--third-color);
   -webkit-transition: .4s;
   transition: .4s;
 }
